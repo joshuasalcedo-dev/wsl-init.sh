@@ -1,5 +1,5 @@
 # Download the installer script
-curl -o script.sh https://raw.githubusercontent.com/username/swa-dev-env/main/install-swa-dev.sh
+curl -o script.sh https://raw.githubusercontent.com/username/swa-dev-env/main/script.sh
 
 # Make it executable
 chmod +x script.sh
