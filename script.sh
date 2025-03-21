@@ -33,10 +33,10 @@ echo
 
 # Ask for Git configuration
 read -p "Enter your Git name [Joshua Salcedo]: " GIT_NAME
-GIT_NAME=${GIT_NAME:-"Joshua Salcedo"}
+GIT_NAME=${GIT_NAME:-"joshuasalcedo-dev"}
 
 read -p "Enter your Git email [joshua.salcedo@chatters.chat]: " GIT_EMAIL
-GIT_EMAIL=${GIT_EMAIL:-"joshua.salcedo@chatters.chat"}
+GIT_EMAIL=${GIT_EMAIL:-"dev@joshuasalcedo.io"}
 
 # Ask for components to install
 echo
@@ -164,7 +164,7 @@ if [ "$INSTALL_JAVA" = "y" ]; then
     ./gradlew clean build -x test
     
     # Create alias for Spring CLI in .bashrc
-    SPRING_ALIAS="alias spring='java -jar $SPRING_CLI_DIR/build/libs/spring-cli-0.9.0.jar'"
+    SPRING_ALIAS="alias spring='java -jar $SPRING_CLI_DIR/build/libs/spring-cli-0.10.0.jar'"
     
     if ! grep -q "alias spring=" "$HOME/.bashrc"; then
         echo "$SPRING_ALIAS" >> "$HOME/.bashrc"
